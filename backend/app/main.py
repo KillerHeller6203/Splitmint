@@ -12,7 +12,7 @@ app = FastAPI(title="SplitMint API", version="1.0.0", redirect_slashes=False)
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:3000", "https://splitmint.vercel.app"],
+    allow_origins=["*"],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
