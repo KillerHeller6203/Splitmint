@@ -338,6 +338,7 @@ export default function ExpensesPage() {
         amount: parsed.amount ? String(parsed.amount) : '',
         split_type: parsed.split_type || 'equal',
         date: parsed.date || '',
+        splits: [],
       })
       setShowMint(false); setMintInput(''); setShowCreate(true)
     } catch (err: unknown) { setMintError(err instanceof Error ? err.message : 'Failed') }
